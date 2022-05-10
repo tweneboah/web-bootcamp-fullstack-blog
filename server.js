@@ -80,9 +80,11 @@ app.use("/users", usersRoute);
 //comment
 app.use("/", commentRoute);
 
+const PORT = process.env.PORT || 8000;
+
 //start server
-app.listen(8000, function () {
-  console.log("Server is up  and running");
+app.listen(PORT, function () {
+  console.log("Server is up  and running" + " " + PORT);
 });
 
 //
